@@ -1,40 +1,76 @@
-### Gradle ###
-.gradle
+# -------------------------
+# Gradle
+# -------------------------
+.gradle/
 build/
+out/
+classes/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/**/build/
 
-### IntelliJ IDEA ###
+# Temporary Gradle files
+*.gradletasknamecache
+*.lock
+*.tmp
+*.hprof
+
+# -------------------------
+# IntelliJ IDEA
+# -------------------------
 .idea/
-*.iws
 *.iml
 *.ipr
-out/
-!**/src/**/out/
+*.iws
 
-.run/
-
-### Eclipse ###
-.apt_generated
-.classpath
-.eclipse/
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/**/bin/
-
-### VS Code ###
+# -------------------------
+# VS Code
+# -------------------------
 .vscode/
 
-### Mac OS ###
-.DS_Store
+# -------------------------
+# Eclipse (just in case)
+# -------------------------
+.project
+.classpath
+.settings/
 
-### Minecraft Modding ###
-run/
-!**/src/**/run/
-**/src/generated/**/.cache/
-repo/
-!**/src/**/repo/
+# -------------------------
+# Logs & crash reports
+# -------------------------
+logs/
+*.log
+crash-reports/
+crash-*.txt
+crash-*.log
+
+# -------------------------
+# OS junk
+# -------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------
+# Minecraft / NeoForge runtime
+# -------------------------
+runs/
+
+# -------------------------
+# Generated resources (data generators)
+# -------------------------
+src/generated/
+
+# -------------------------
+# Java compilation leftovers
+# -------------------------
+*.class
+*.jar
+*.war
+*.ear
+
+# Annotation processor leftovers
+*.aj
+*.ctxt
+
+# -------------------------
+# Cache
+# -------------------------
+.cache/
